@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Carenester - Get in touch with our team for elderly care services and support">
+    <title>Contact Us - Carenester</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Carenester</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="book.html" class="nav-cta">Book Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <span class="hero-tagline">Get In Touch</span>
+            <h2>Contact Us</h2>
+            <p>We're here to answer your questions and provide the support you need</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up" data-aos-anchor-placement="top-bottom">How To Reach Us</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">Our Contact Information</h2>
+            <div class="contact-cards">
+                <div class="contact-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our care specialists</p>
+                    <p class="contact-detail">+91 123 456 7890</p>
+                    <p class="contact-note">Available 24/7 for your care needs</p>
+                </div>
+
+                <div class="contact-card" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us your inquiries anytime</p>
+                    <p class="contact-detail">care@carenester.com</p>
+                    <p class="contact-note">We usually respond within 24 hours</p>
+                </div>
+
+                <div class="contact-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Our regional offices are located at</p>
+                    <div class="contact-locations">
+                        <p class="contact-detail">Mumbai: 123 Healthcare Avenue, Andheri East</p>
+                        <p class="contact-detail">Delhi: 456 Wellness Road, Connaught Place</p>
+                        <p class="contact-detail">Bangalore: 789 Care Street, Koramangala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="form-container" data-aos="fade-right" data-aos-duration="1200">
+                    <span class="section-subtitle">Send Us a Message</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Patient's Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Patient Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Relation with Patient</label>
+                            <select id="relation-with-patient" name="relation-with-patient" required>
+                                        <option value="" disabled selected>Select your relation with patient</option>
+                                        <option value="son">Son</option>
+                                        <option value="daughter">Daughter</option>
+                                        <option value="brother">Brother</option>
+                                        <option value="sister">Sister</option>
+                                        <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="Patient's City" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="services">Services for Patient</label>
+                            <select id="services" name="services" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="caregivers">Trained Caregivers</option>
+                                <option value="nursing">Home Nursing</option>
+                                <option value="pharmacy">Home Medical</option>
+                                <option value="physician">Specialist & Doctor Consultancy</option>
+                                <option value="transport">Cab & Ambulance</option>
+                                <option value="accessories">Medical Accessories</option>
+                                <option value="logistics">Home Delivery</option>
+                                <option value="porter">Porter Services</option>
+                                <option value="multiple">Multiple Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Condition Of Patient</label>
+                            <textarea id="message" name="message" placeholder="Tell us about the Condition of Patient" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    
+                    <!-- Contact Form Success Message -->
+                    <div id="contact-success" class="contact-success" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us. We have received your message and will get back to you shortly.</p>
+                    </div>
+                </div>
+                <!-- <div class="contact-info-sidebar" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="contact-box">
+                        <h3>Working Hours</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">Monday - Friday:</span>
+                                <span class="hours">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="day">Saturday:</span>
+                                <span class="hours">10:00 AM - 4:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="day">Sunday:</span>
+                                <span class="hours">Closed (Emergency support available)</span>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="contact-box">
+                        <h3>Emergency Contact</h3>
+                        <p>For urgent care needs outside regular hours:</p>
+                        <p class="emergency-number">+91 999 888 7777</p>
+                        <p class="note">Available 24/7 for emergencies only</p>
+                    </div> -->
+                    <!-- <div class="contact-box">
+                        <h3>Follow Us</h3>
+                        <div class="social-links-contact">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div> -->
+                        <!-- <p class="note">Stay updated with our latest news and tips</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <span class="section-subtitle" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Find Us</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">Our Locations</h2>
+            <div class="map-container" data-aos="zoom-in" data-aos-duration="1500">
+                <!-- Replace this with an actual Google Maps embed code in a real implementation -->
+                <div class="map-placeholder">
+                    <p>Map showing our locations in Mumbai, Delhi, and Bangalore</p>
+                    <p class="map-note">We provide services in these cities and surrounding areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Carenester</h2>
+                    <p>Holistic care solutions for elderly and geriatric patients</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="book.html">Book a Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#caregivers">Trained Caregivers</a></li>
+                        <li><a href="services.html#nursing">Home Nursing</a></li>
+                        <li><a href="services.html#pharmacy">Pharmacy</a></li>
+                        <li><a href="services.html#physician">Physician Visits</a></li>
+                        <li><a href="services.html#transport">Cab & Ambulance</a></li>
+                        <li><a href="services.html#accessories">Medical Accessories</a></li>
+                        <li><a href="services.html#logistics">Logistics Support</a></li>
+                        <li><a href="services.html#porter">Porter Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> care@carenester.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Delhi, Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Carenester. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: false,
+                mirror: true,
+                offset: 100,
+                easing: 'ease-in-out',
+                delay: 100
+            });
+            
+            // Update current year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

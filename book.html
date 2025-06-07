@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Carenester Services - Request elderly care services including caregivers, home nursing, and more">
+    <title>Book a Service - Carenester</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Carenester</a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="book.html" class="nav-cta">Book Now</a></li> 
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <span class="hero-tagline">Request Care</span>
+            <h2>Book a Service</h2>
+            <p>Request the care services you need in a few simple steps</p>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container" data-aos="fade-up" data-aos-duration="1200">
+                <div class="booking-steps" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Select Service</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Personal Details</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Patient Details</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" data-step="4">
+                        <div class="step-number">4</div>
+                        <div class="step-label">Confirm</div>
+                    </div>
+                </div>
+
+                <form id="booking-form" class="booking-form">
+                    <!-- Step 1: Service Selection -->
+                    <div class="form-step active" data-step="1" data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class="form-title">Choose a Service</h2>
+                        <p class="form-subtitle">Select the service you would like to book</p>
+                       
+                        <div class="service-options-container">
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="100">
+                                <input type="radio" name="service" id="caregivers" value="caregivers" required>
+                                <label for="caregivers" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-user-nurse"></i>
+                                    </div>
+                                    <div class="service-name">Trained Caregivers</div>
+                                    <div class="service-desc">In-home care, personal assistance, and dementia care</div>
+                                </label>
+                            </div>
+                            
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="150">
+                                <input type="radio" name="service" id="nursing" value="nursing">
+                                <label for="nursing" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-hospital-user"></i>
+                                    </div>
+                                    <div class="service-name">Home Nursing</div>
+                                    <div class="service-desc">ICU/post-op care, injections, and vitals monitoring</div>
+                                </label>
+                            </div>
+                            
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="200">
+                                <input type="radio" name="service" id="pharmacy" value="pharmacy">
+                                <label for="pharmacy" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-pills"></i>
+                                    </div>
+                                    <div class="service-name">Home Medical</div>
+                                    <div class="service-desc">Prescription medicines and regular refills delivery</div>
+                                </label>
+                            </div>
+
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="250">
+                                <input type="radio" name="service" id="physician" value="physician">
+                                <label for="physician" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-user-md"></i>
+                                    </div>
+                                    <div class="service-name">Specialists & Doctor Consultancy</div>
+                                    <div class="service-desc">Doctor home visits and teleconsultations</div>
+                                </label>
+                            </div>
+
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="300">
+                                <input type="radio" name="service" id="transport" value="transport">
+                                <label for="transport" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-ambulance"></i>
+                                    </div>
+                                    <div class="service-name">Cab & Ambulance</div>
+                                    <div class="service-desc">Emergency transport and wheelchair support</div>
+                                </label>
+                            </div>
+
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="350">
+                                <input type="radio" name="service" id="accessories" value="accessories">
+                                <label for="accessories" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-wheelchair"></i>
+                                    </div>
+                                    <div class="service-name">Medical Accessories</div>
+                                    <div class="service-desc">Rental and sale of hospital beds, oxygen equipment</div>
+                                </label>
+                            </div>
+
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="400">
+                                <input type="radio" name="service" id="logistics" value="logistics">
+                                <label for="logistics" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-shipping-fast"></i>
+                                    </div>
+                                    <div class="service-name">Home Delivery</div>
+                                    <div class="service-desc">Home sample collections and document pick-ups</div>
+                                </label>
+                            </div>
+
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="450">
+                                <input type="radio" name="service" id="porter" value="porter">
+                                <label for="porter" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-hands-helping"></i>
+                                    </div>
+                                    <div class="service-name">Porter Services</div>
+                                    <div class="service-desc">Hospital discharge, in-hospital support, luggage handling</div>
+                                </label>
+                            </div>
+
+                            <div class="service-option" data-aos="zoom-in" data-aos-delay="450">
+                                <input type="radio" name="service" id="porter" value="porter">
+                                <label for="porter" class="service-label next-step" data-next="2">
+                                    <div class="service-icon">
+                                        <i class="fas fa-person-walking-with-cane"></i>
+                                    </div>
+                                    <div class="service-name">Home Physiotherapy</div>
+                                    <div class="service-desc">Personalized home exercise plans and more.</div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Step 2: Personal Details -->
+                    <div class="form-step" data-step="2" data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class="form-title">Personal Information</h2>
+                        <p class="form-subtitle">Please provide your contact details</p>
+                        
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                            </div>
+
+                            <div class="form-group">
+                            <label for="relation-with-patient">Relation with Patient</label>
+                                <select id="relation-with-patient" name="relation-with-patient" required>
+                                        <option value="" disabled selected>Select your relation with patient</option>
+                                        <option value="son">Son</option>
+                                        <option value="daughter">Daughter</option>
+                                        <option value="brother">Brother</option>
+                                        <option value="sister">Sister</option>
+                                        <option value="other">Other</option>
+                                </select>
+                            </div>    
+                        </div> 
+
+                        <div class="form-navigation">
+                             <button type="button" class="btn btn-primary prev-step" data-prev="1"><i class="fas fa-arrow-left"></i> Back</button>
+                            <button type="button" class="btn btn-secondary next-step" data-next="3">Continue <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                        
+                    </div>
+                    <!-- Step 3: Patient Info -->
+                    <div class="form-step" data-step="3" data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class="form-title">Patient Details</h2>
+                        <p class="form-subtitle">Tell us more about Patient specific needs</p>
+                        
+                        <div class="form-group">
+                                <label for="patient-name">Patient's Name</label>
+                                <input type="text" id="patient-name" name="patient-name" placeholder="Enter Patient's Name" required>
+                        </div>
+                       
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="patient-age">Patient Age</label>
+                                <input type="number" id="patient-age" name="patient-age" placeholder="Age in years" min="1" max="120" required>
+                            </div>
+                        
+                            <div class="form-group">
+                                    <label for="patient-phone">Phone Number</label>
+                                    <input type="tel" id="patient-phone" name="patient-phone" placeholder="Enter Patient's Phone nunmber" min="1" max="120" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Enter Patient's address" required>
+                            </div>
+
+                             <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" placeholder="Enter Patient's city" required>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="start-date">Start Date</label>
+                                <input type="date" id="start-date" name="start-date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="duration">Duration</label>
+                                <select id="duration" name="duration" required>
+                                    <option value="" disabled selected>Select duration</option>
+                                    <option value="one-time">One-time Service</option>
+                                    <option value="days">Few Days</option>
+                                    <option value="week">1 Week</option>
+                                    <option value="month">1 Month</option>
+                                    <option value="ongoing">Ongoing Service</option>
+                                </select>
+                            </div> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requirements">Condition of Patient</label>
+                            <textarea id="requirements" name="requirements" rows="4" placeholder="Please describe any special requirements or medical conditions we should know about "></textarea>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-primary prev-step" data-prev="2"><i class="fas fa-arrow-left"></i> Back</button>
+                            <button type="button" class="btn btn-secondary next-step" data-next="4">Continue <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4: Confirmation -->
+                    <div class="form-step" data-step="4" data-aos="fade-right" data-aos-duration="1000">
+                        <h2 class="form-title">Confirm Your Booking</h2>
+                        <p class="form-subtitle">Please review your information before submitting</p>
+                        
+                        <div class="booking-summary">
+                            <h3>Booking Summary</h3>
+                            <div class="summary-item">
+                                <span class="summary-label">Service:</span>
+                                <span class="summary-value" id="summary-service">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Name:</span>
+                                <span class="summary-value" id="summary-name">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Contact:</span>
+                                <span class="summary-value" id="summary-contact">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Location:</span>
+                                <span class="summary-value" id="summary-location">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Start Date:</span>
+                                <span class="summary-value" id="summary-date">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Duration:</span>
+                                <span class="summary-value" id="summary-duration">-</span>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="consent-box">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                        </div> -->
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-primary prev-step" data-prev="3"><i class="fas fa-arrow-left"></i> Back</button>
+                            <button type="button" class="btn btn-secondary" id="debug-button" style="margin-left: 10px;">Submit Booking <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="booking-success" style="display: none;" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="success-card">
+                        <div class="success-animation">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                            </svg>
+                        </div>
+                        <h2 class="success-title">Booking Confirmed!</h2>
+                        <div class="success-message">
+                            <p>Thank you for choosing Carenester. Your care service request has been successfully submitted.</p>
+                            <div class="confirmation-details">
+                                <div class="confirmation-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>We have received your request</span>
+                                </div>
+                                <div class="confirmation-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>Our care specialist will call you within 2 hours</span>
+                                </div>
+                                <div class="confirmation-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>A confirmation email has been sent to your email address</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="success-actions">
+                            <a href="index.html" class="btn btn-outline"><i class="fas fa-home"></i> Return to Home</a>
+                            <a href="services.html" class="btn btn-primary"><i class="fas fa-list"></i> Explore More Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-help">
+        <div class="container">
+            <div class="help-content" data-aos="fade-up">
+                <span class="section-subtitle">Need Assistance?</span>
+                <h2>Need Help with Your Booking?</h2>
+                <p>Our care specialists are available to assist you with the booking process.</p>
+                <div class="help-options">
+                    <div class="help-option">
+                        <i class="fas fa-phone"></i>
+                        <span>Call us at +91 123 456 7890</span>
+                    </div>
+                    <div class="help-option">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email us at care@carenester.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Carenester</h2>
+                    <p>Holistic care solutions for elderly and geriatric patients</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="book.html">Book a Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#caregivers">Trained Caregivers</a></li>
+                        <li><a href="services.html#nursing">Home Nursing</a></li>
+                        <li><a href="services.html#pharmacy">Pharmacy</a></li>
+                        <li><a href="services.html#physician">Physician Visits</a></li>
+                        <li><a href="services.html#transport">Cab & Ambulance</a></li>
+                        <li><a href="services.html#accessories">Medical Accessories</a></li>
+                        <li><a href="services.html#logistics">Logistics Support</a></li>
+                        <li><a href="services.html#porter">Porter Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> care@carenester.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Delhi, Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Carenester. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: false,
+                mirror: true,
+                offset: 100,
+                easing: 'ease-in-out',
+                delay: 100
+            });
+            
+            // Update current year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Debug button to show success message
+            const debugButton = document.getElementById('debug-button');
+            if (debugButton) {
+                debugButton.addEventListener('click', function() {
+                    console.log('Debug button clicked');
+                    
+                    // Update the summary with current form values
+                    if (typeof updateSummary === 'function') {
+                        updateSummary();
+                    }
+                    
+                    const bookingForm = document.getElementById('booking-form');
+                    const bookingSuccess = document.querySelector('.booking-success');
+                    
+                    if (bookingForm && bookingSuccess) {
+                        // Show loading state
+                        this.disabled = true;
+                        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                        
+                        // Simulate form submission with a short delay
+                        setTimeout(() => {
+                            bookingForm.style.display = 'none';
+                            bookingSuccess.style.display = 'block';
+                            console.log('Success message displayed');
+                            
+                            // Scroll to success message
+                            bookingSuccess.scrollIntoView({ behavior: 'smooth' });
+                        }, 1500);
+                    } else {
+                        console.log('Could not find form or success message', {
+                            form: bookingForm,
+                            success: bookingSuccess
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
