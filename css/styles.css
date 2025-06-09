@@ -171,7 +171,7 @@ img {
 
 /* Header */
 header {
-    
+    background-color: #fcfcfc;
     box-shadow: var(--box-shadow);
     padding: 18px 0;
     position: sticky;
@@ -186,17 +186,38 @@ header .container {
     align-items: center;
 }
 
-.logo a {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    transition: var(--transition);
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo a:before {
+/* .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+} */
+
+.logo-img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* .logo-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+} */
+
+/* .logo-link:hover .logo-text {
+    color: var(--highlight-color);
+    
+} */
+
+
+/* .logo a:before {
     content: '';
     display: inline-block;
     width: 30px;
@@ -205,7 +226,7 @@ header .container {
     border-radius: 50%;
     margin-right: 10px;
     transition: var(--transition);
-}
+} */
 
 .logo a:hover:before {
     transform: scale(1.1);
@@ -2335,14 +2356,12 @@ footer::before {
     z-index: 1;
 } */
 
-/* Add these styles to support the JavaScript enhancements */
-
 /* Header scroll effect */
-header.scrolled {
+/* header.scrolled {
     padding: 12px 0;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.98);
-}
+} */
 
 /* Form validation styles */
 .form-group {
@@ -2927,9 +2946,9 @@ footer::before {
 }
 
 /* Header Animation */
-header.scrolled {
+/* header.scrolled {
     animation: slideDown 0.5s forwards;
-}
+} */
 
 @keyframes slideDown {
     from { transform: translateY(-100%); }

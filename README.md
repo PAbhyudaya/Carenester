@@ -103,9 +103,6 @@ Potential future additions may include:
 - Edge (latest)
 - Opera (latest)
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Credits
 
@@ -114,4 +111,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-© 2023 Carenester. All rights reserved.
+© 2025 Carenester. All rights reserved.
